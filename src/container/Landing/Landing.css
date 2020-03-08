@@ -1,0 +1,46 @@
+.landing-root {
+    /* background-color: dimgray;
+    background-image: url('../../assets/images/landing-bg.jpg'); */
+    background: 
+    linear-gradient(
+      rgba(245 , 245, 245, 0.5), 
+      rgba(220, 220, 220    , 0.5)
+    )    
+    , url('../../assets/images/landing-bg.jpg');;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* z-index: 0; */
+    /* opacity: 0.9; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-root {
+    width: 600px;
+}
+
+/* Mobile */
+@media screen and (max-width:767px){
+    .landing-root {
+        background-image: url('../../assets/images/landing-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* z-index: 0; */
+        /* opacity: 0.3; */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-root {
+        width: 325px;
+    }
+
+    
+}
+

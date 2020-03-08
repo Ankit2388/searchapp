@@ -1,0 +1,48 @@
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: brown !important; */
+    
+    
+}
+.logo {
+    width: 15%;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    /* margin: 16px 24px 16px 0; */
+    float: left;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .header-input {
+      width: 85%;
+      /* background-color: blue !important; */
+      display: flex;
+      /* justify-content: center; */
+      padding-left: 50px;
+      align-items: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+      .header {
+        justify-content: center;
+        height: 150px !important;
+        
+      }
+      .logo {
+          height: 40%;
+      }
+    .header-input {
+      /* max-width: 325px !important;
+      width:  100% !important; */
+      height: 40%;
+      padding-left: 0px;
+      width: 325px;
+    }
+  }

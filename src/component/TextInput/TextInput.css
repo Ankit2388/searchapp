@@ -1,0 +1,68 @@
+.TextField {
+    height: 40px;
+    width: 500px;
+    border: 1px solid #000 !important;
+    border-radius: 20px;
+    outline: none;
+    font-size: 20px;
+    z-index: 2;
+}
+.input-layout {
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width:  600px;
+    
+}
+.input {
+    margin-left: auto;
+    padding: 0px 10px;
+    flex: 1;   
+    font-size: 20px !important;
+}
+.iconButton{
+    padding: 10px;
+}
+
+.no-suggestions {
+    color: #999;
+    padding: 0.5rem;
+    position: absolute;
+  }
+  
+  .suggestions {
+    border: 1px solid #999;
+    border-top-width: 0;
+    list-style: none;
+    margin-top: 0;
+    max-height: 143px;
+    overflow-y: auto;
+    padding-left: 0;
+    width: calc(600px + 1rem);
+    position: absolute;
+  }
+  
+  .suggestions li {
+    padding: 0.5rem;
+  }
+  
+  .suggestion-active,
+  .suggestions li:hover {
+    background-color: #f2f2f2;
+    color: #000;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .suggestions li:not(:last-of-type) {
+    border-bottom: 1px solid #999;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .input-layout {
+      /* max-width: 325px !important;
+      width:  100% !important; */
+      width: 325px;
+    }
+  }
